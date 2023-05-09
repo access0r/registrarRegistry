@@ -5,7 +5,7 @@ import "./AccessControl.sol";
 import "./Pausable.sol";
 import "./registrarRegistry.sol";
 
-contract ContractB is AccessControl, Pausable {
+contract registrarRegistry is AccessControl, Pausable {
     Registry public registry;
 
     bytes32 public constant ADMIN_ROLE = keccak256("ADMIN_ROLE");
