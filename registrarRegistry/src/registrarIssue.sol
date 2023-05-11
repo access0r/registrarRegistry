@@ -1,9 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "./AccessControl.sol";
-import "./Pausable.sol";
-import "./registrarRegistry.sol";
+
+import "/registrarRegistry.sol";
+import "@openzeppelin/contracts/access/AccessControl.sol";
+import "@openzeppelin/contracts/security/Pausable.sol";
 
 contract registrarRegistry is AccessControl, Pausable {
     Registry public registry;
