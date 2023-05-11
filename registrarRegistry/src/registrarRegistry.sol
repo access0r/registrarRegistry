@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "./AccessControl.sol";
 
+import "@openzeppelin/contracts/access/AccessControl.sol";
 
 contract registrarRegistry is AccessControl {
     bytes32 public constant REGISTRAR_ROLE = keccak256("REGISTRAR_ROLE");
