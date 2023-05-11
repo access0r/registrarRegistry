@@ -15,7 +15,7 @@
         When checking for approval, the contract calls the isApproved() function in the Registry contract with its own address as the argument.
         The contract can be paused or unpaused by users with the ADMIN_ROLE.
 
-    registrarFacorty contract:
+    registrarFactory contract:
         The factory contract that deploys instances of the registrarOwner contract.
         Utilizes OpenZeppelin's AccessControl for role-based access control.
         Defines a FACTORY_ADMIN_ROLE for users authorized to create new instances of registrarOwner.
